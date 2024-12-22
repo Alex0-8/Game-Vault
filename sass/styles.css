@@ -84,6 +84,7 @@ header .header__logo {
 .products .product__img {
   width: 200px;
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 .products .product__name {
   font-size: 17px;
