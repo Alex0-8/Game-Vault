@@ -54,6 +54,13 @@ header {
 
     img {
       width: 100%;
+      transition: all .6s ease;
+
+      @media (hover: hover) {
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
     }
   }
 
@@ -154,6 +161,13 @@ header {
 
       img {
         width: 100%;
+        transition: all .6s ease;
+
+        @media (hover: hover) {
+          &:hover {
+            transform: scale(.9);
+          }
+        }
       }
     }
   }
