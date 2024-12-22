@@ -30,9 +30,17 @@ header .header__cart-icon {
 header .header__menu-icon img,
 header .header__cart-icon img {
   width: 100%;
+  transition: all 0.6s ease;
+}
+@media (hover: hover) {
+  header .header__menu-icon img:hover,
+  header .header__cart-icon img:hover {
+    transform: scale(0.9);
+  }
 }
 header .header__logo {
   width: 100px;
+  border-radius: 8px;
 }
 
 .banner {
@@ -76,6 +84,7 @@ header .header__logo {
 .products .product__img {
   width: 200px;
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 .products .product__name {
   font-size: 17px;
@@ -93,6 +102,7 @@ header .header__logo {
   right: -100%;
   top: 100px;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 .cart__title {
   width: 100%;
@@ -122,6 +132,12 @@ header .header__logo {
 }
 .cart__item-remove-btn img {
   width: 100%;
+  transition: all 0.6s ease;
+}
+@media (hover: hover) {
+  .cart__item-remove-btn img:hover {
+    transform: scale(0.9);
+  }
 }
 
 @media (max-width: 820px) {

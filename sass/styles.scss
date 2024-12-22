@@ -23,6 +23,10 @@ $box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
   font-weight: $font-weight;
 }
 
+@mixin border-radius ($radius: 8px) {
+  border-radius: $radius;
+}
+
 // Global styles
 body {
   width: 100%;
@@ -54,11 +58,19 @@ header {
 
     img {
       width: 100%;
+      transition: all .6s ease;
+
+      @media (hover: hover) {
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
     }
   }
 
   .header__logo {
     width: 100px;
+    @include border-radius;
   }
 }
 
@@ -104,6 +116,7 @@ header {
     &__img {
       width: 200px;
       margin-bottom: 15px;
+      @include border-radius;
     }
 
     &__name {
@@ -124,6 +137,8 @@ header {
   right: -100%;
   top: 100px;
   box-shadow: $box-shadow;
+  
+  @include border-radius;
 
   &__title {
     width: 100%;
@@ -153,6 +168,13 @@ header {
 
       img {
         width: 100%;
+        transition: all .6s ease;
+
+        @media (hover: hover) {
+          &:hover {
+            transform: scale(.9);
+          }
+        }
       }
     }
   }
