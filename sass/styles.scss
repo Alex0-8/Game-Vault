@@ -23,6 +23,10 @@ $box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
   font-weight: $font-weight;
 }
 
+@mixin border-radius ($radius: 8px) {
+  border-radius: $radius;
+}
+
 // Global styles
 body {
   width: 100%;
@@ -66,7 +70,7 @@ header {
 
   .header__logo {
     width: 100px;
-    border-radius: 8px;
+    @include border-radius;
   }
 }
 
@@ -112,7 +116,7 @@ header {
     &__img {
       width: 200px;
       margin-bottom: 15px;
-      border-radius: 8px;
+      @include border-radius;
     }
 
     &__name {
@@ -133,6 +137,8 @@ header {
   right: -100%;
   top: 100px;
   box-shadow: $box-shadow;
+  
+  @include border-radius;
 
   &__title {
     width: 100%;

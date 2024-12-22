@@ -102,6 +102,7 @@ header .header__logo {
   right: -100%;
   top: 100px;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 .cart__title {
   width: 100%;
