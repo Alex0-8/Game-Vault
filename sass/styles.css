@@ -39,7 +39,7 @@ header .header__logo {
   width: 100%;
   padding: 60px 0;
   text-align: center;
-  background-image: url(../../img/banner.webp);
+  background-image: url(../img/banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   color: #1d1d1d;
