@@ -33,6 +33,7 @@ header .header__cart-icon img {
 }
 header .header__logo {
   width: 100px;
+  border-radius: 8px;
 }
 
 .banner {
